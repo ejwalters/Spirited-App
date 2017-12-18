@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E7ED1605ED65F68ABE4CA54 /* Pods_Spirit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA0108B2C5666C8E03519E4 /* Pods_Spirit_App.framework */; };
+		526897231FE7102600AAF88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897221FE7102600AAF88E /* AppDelegate.swift */; };
+		526897251FE7102600AAF88E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897241FE7102600AAF88E /* WelcomeViewController.swift */; };
+		526897281FE7102600AAF88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526897261FE7102600AAF88E /* Main.storyboard */; };
+		5268972A1FE7102600AAF88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526897291FE7102600AAF88E /* Assets.xcassets */; };
+		5268972D1FE7102600AAF88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5268972B1FE7102600AAF88E /* LaunchScreen.storyboard */; };
+		526897381FE7226100AAF88E /* CoolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897371FE7226100AAF88E /* CoolButton.swift */; };
+		5268973B1FE722DA00AAF88E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268973A1FE722DA00AAF88E /* Constants.swift */; };
+		5268973D1FE7267E00AAF88E /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268973C1FE7267E00AAF88E /* AkiraTextField.swift */; };
+		5268973F1FE729C100AAF88E /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268973E1FE729C100AAF88E /* TextFieldEffects.swift */; };
+		526897411FE72A6300AAF88E /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897401FE72A6300AAF88E /* YoshikoTextField.swift */; };
+		526897431FE7473900AAF88E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526897421FE7473800AAF88E /* GoogleService-Info.plist */; };
+		526897461FE7526900AAF88E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897451FE7526900AAF88E /* HeaderView.swift */; };
+		5268974A1FE76E8F00AAF88E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897491FE76E8F00AAF88E /* GradientView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D9972245524CEF5E69C9F9E /* Pods-Spirit-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spirit-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App.release.xcconfig"; sourceTree = "<group>"; };
+		18FE2024207D3492E3DFF593 /* Pods-Spirit-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spirit-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App.debug.xcconfig"; sourceTree = "<group>"; };
+		5268971F1FE7102600AAF88E /* Spirit-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spirit-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		526897221FE7102600AAF88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		526897241FE7102600AAF88E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		526897271FE7102600AAF88E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		526897291FE7102600AAF88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5268972C1FE7102600AAF88E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5268972E1FE7102600AAF88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526897371FE7226100AAF88E /* CoolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolButton.swift; sourceTree = "<group>"; };
+		5268973A1FE722DA00AAF88E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5268973C1FE7267E00AAF88E /* AkiraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		5268973E1FE729C100AAF88E /* TextFieldEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		526897401FE72A6300AAF88E /* YoshikoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		526897421FE7473800AAF88E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		526897451FE7526900AAF88E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		526897491FE76E8F00AAF88E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6FA0108B2C5666C8E03519E4 /* Pods_Spirit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spirit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5268971C1FE7102600AAF88E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7ED1605ED65F68ABE4CA54 /* Pods_Spirit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526897161FE7102600AAF88E = {
+			isa = PBXGroup;
+			children = (
+				526897211FE7102600AAF88E /* Spirit-App */,
+				526897201FE7102600AAF88E /* Products */,
+				9D67A802AF10B57059252E35 /* Pods */,
+				FE025711FECFA2FC0DDA9FD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		526897201FE7102600AAF88E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5268971F1FE7102600AAF88E /* Spirit-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		526897211FE7102600AAF88E /* Spirit-App */ = {
+			isa = PBXGroup;
+			children = (
+				526897391FE722CB00AAF88E /* Utilities */,
+				526897361FE7169800AAF88E /* Controller */,
+				526897351FE7169200AAF88E /* View */,
+				526897341FE7168800AAF88E /* Model */,
+				526897291FE7102600AAF88E /* Assets.xcassets */,
+				5268972B1FE7102600AAF88E /* LaunchScreen.storyboard */,
+				5268972E1FE7102600AAF88E /* Info.plist */,
+				526897421FE7473800AAF88E /* GoogleService-Info.plist */,
+			);
+			path = "Spirit-App";
+			sourceTree = "<group>";
+		};
+		526897341FE7168800AAF88E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		526897351FE7169200AAF88E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				526897261FE7102600AAF88E /* Main.storyboard */,
+				526897371FE7226100AAF88E /* CoolButton.swift */,
+				5268973C1FE7267E00AAF88E /* AkiraTextField.swift */,
+				5268973E1FE729C100AAF88E /* TextFieldEffects.swift */,
+				526897401FE72A6300AAF88E /* YoshikoTextField.swift */,
+				526897451FE7526900AAF88E /* HeaderView.swift */,
+				526897491FE76E8F00AAF88E /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		526897361FE7169800AAF88E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				526897221FE7102600AAF88E /* AppDelegate.swift */,
+				526897241FE7102600AAF88E /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		526897391FE722CB00AAF88E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5268973A1FE722DA00AAF88E /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9D67A802AF10B57059252E35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18FE2024207D3492E3DFF593 /* Pods-Spirit-App.debug.xcconfig */,
+				0D9972245524CEF5E69C9F9E /* Pods-Spirit-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE025711FECFA2FC0DDA9FD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0108B2C5666C8E03519E4 /* Pods_Spirit_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5268971E1FE7102600AAF88E /* Spirit-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526897311FE7102600AAF88E /* Build configuration list for PBXNativeTarget "Spirit-App" */;
+			buildPhases = (
+				04EA5F6BC2C6D3EEA2AD999B /* [CP] Check Pods Manifest.lock */,
+				5268971B1FE7102600AAF88E /* Sources */,
+				5268971C1FE7102600AAF88E /* Frameworks */,
+				5268971D1FE7102600AAF88E /* Resources */,
+				5AB75716EB59F8A29BE047EB /* [CP] Embed Pods Frameworks */,
+				95C81523F468A16787ED7770 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spirit-App";
+			productName = "Spirit-App";
+			productReference = 5268971F1FE7102600AAF88E /* Spirit-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526897171FE7102600AAF88E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Eric Walters";
+				TargetAttributes = {
+					5268971E1FE7102600AAF88E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5268971A1FE7102600AAF88E /* Build configuration list for PBXProject "Spirit-App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526897161FE7102600AAF88E;
+			productRefGroup = 526897201FE7102600AAF88E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5268971E1FE7102600AAF88E /* Spirit-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5268971D1FE7102600AAF88E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5268972D1FE7102600AAF88E /* LaunchScreen.storyboard in Resources */,
+				5268972A1FE7102600AAF88E /* Assets.xcassets in Resources */,
+				526897281FE7102600AAF88E /* Main.storyboard in Resources */,
+				526897431FE7473900AAF88E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04EA5F6BC2C6D3EEA2AD999B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spirit-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB75716EB59F8A29BE047EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C81523F468A16787ED7770 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5268971B1FE7102600AAF88E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526897411FE72A6300AAF88E /* YoshikoTextField.swift in Sources */,
+				526897251FE7102600AAF88E /* WelcomeViewController.swift in Sources */,
+				526897231FE7102600AAF88E /* AppDelegate.swift in Sources */,
+				5268973F1FE729C100AAF88E /* TextFieldEffects.swift in Sources */,
+				526897381FE7226100AAF88E /* CoolButton.swift in Sources */,
+				5268973D1FE7267E00AAF88E /* AkiraTextField.swift in Sources */,
+				5268973B1FE722DA00AAF88E /* Constants.swift in Sources */,
+				526897461FE7526900AAF88E /* HeaderView.swift in Sources */,
+				5268974A1FE76E8F00AAF88E /* GradientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		526897261FE7102600AAF88E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526897271FE7102600AAF88E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5268972B1FE7102600AAF88E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5268972C1FE7102600AAF88E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5268972F1FE7102600AAF88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		526897301FE7102600AAF88E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		526897321FE7102600AAF88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FE2024207D3492E3DFF593 /* Pods-Spirit-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RCEQ78UDF;
+				INFOPLIST_FILE = "Spirit-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EJW.EJW-Spirit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		526897331FE7102600AAF88E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9972245524CEF5E69C9F9E /* Pods-Spirit-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9RCEQ78UDF;
+				INFOPLIST_FILE = "Spirit-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EJW.EJW-Spirit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5268971A1FE7102600AAF88E /* Build configuration list for PBXProject "Spirit-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5268972F1FE7102600AAF88E /* Debug */,
+				526897301FE7102600AAF88E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526897311FE7102600AAF88E /* Build configuration list for PBXNativeTarget "Spirit-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526897321FE7102600AAF88E /* Debug */,
+				526897331FE7102600AAF88E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 526897171FE7102600AAF88E /* Project object */;
+}

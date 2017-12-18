@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>411796737684-ml26unbgub3r26h6nvc01n7a9r8c4cj5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.411796737684-ml26unbgub3r26h6nvc01n7a9r8c4cj5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBp6VHin6KsFP_OhcNiWKEGI9MY2e3BPvA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>411796737684</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>EJW.EJW-Spirit</string>
+	<key>PROJECT_ID</key>
+	<string>spirited-d4056</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spirited-d4056.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:411796737684:ios:bbaba97907e1e4b4</string>
+	<key>DATABASE_URL</key>
+	<string>https://spirited-d4056.firebaseio.com</string>
+</dict>
+</plist>
