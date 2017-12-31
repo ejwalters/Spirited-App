@@ -1,8 +1,6 @@
 //
 //  ViewController.swift
-//  Spirit-App
-//
-//  Created by Eric Walters on 12/17/17.
+//  Spirit-Appw
 //  Copyright © 2017 Eric Walters. All rights reserved.
 //
 
@@ -12,8 +10,8 @@ import Firebase
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeImage: UIImageView!
-    @IBOutlet weak var emailText: YoshikoTextField!
-    @IBOutlet weak var passwordText: YoshikoTextField!
+    @IBOutlet weak var emailText: EricTextField!
+    @IBOutlet weak var passwordText: EricTextField!
     
     
     override func viewDidLoad() {
@@ -33,6 +31,9 @@ class WelcomeViewController: UIViewController {
 //        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 //        
 //        welcomeImage.addSubview(blurEffectView)
+        
+        self.hideKeyboardWhenTappedAround() 
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,17 +44,19 @@ class WelcomeViewController: UIViewController {
     @IBAction func loginPressed(_ sender: CoolButton) {
         
         //TODO: Set up a new user on our Firbase database
-        Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
-            if error != nil {
-                print(error!)
-            } else {
-                //success
-                print("Registration Successful!")
-                
-            }
-        }
+//        Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
+//            if error != nil {
+//                print(error!)
+//            } else {
+//                //success
+//                print("Registration Successful!")
+//
+//            }
+//        }
         
     }
+    
+
     
 }
 

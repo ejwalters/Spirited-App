@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E7ED1605ED65F68ABE4CA54 /* Pods_Spirit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA0108B2C5666C8E03519E4 /* Pods_Spirit_App.framework */; };
+		525469B61FF95A50004A8D11 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469B51FF95A50004A8D11 /* CardView.swift */; };
 		526897231FE7102600AAF88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897221FE7102600AAF88E /* AppDelegate.swift */; };
 		526897251FE7102600AAF88E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897241FE7102600AAF88E /* WelcomeViewController.swift */; };
 		526897281FE7102600AAF88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526897261FE7102600AAF88E /* Main.storyboard */; };
@@ -21,11 +22,19 @@
 		526897431FE7473900AAF88E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526897421FE7473800AAF88E /* GoogleService-Info.plist */; };
 		526897461FE7526900AAF88E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897451FE7526900AAF88E /* HeaderView.swift */; };
 		5268974A1FE76E8F00AAF88E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897491FE76E8F00AAF88E /* GradientView.swift */; };
+		526DE1E11FF4750D00A2478E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE1E01FF4750D00A2478E /* RegisterViewController.swift */; };
+		526DE1E31FF4943100A2478E /* EricTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526DE1E21FF4943100A2478E /* EricTextField.swift */; };
+		52BA00191FF594D200250348 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA00181FF594D200250348 /* UIExtension.swift */; };
+		52BA001B1FF712CC00250348 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA001A1FF712CC00250348 /* FeedViewController.swift */; };
+		52BA001D1FF8534C00250348 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA001C1FF8534C00250348 /* Post.swift */; };
+		52BA001F1FF8593000250348 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA001E1FF8593000250348 /* FancyView.swift */; };
+		52BA00211FF85F6900250348 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA00201FF85F6900250348 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D9972245524CEF5E69C9F9E /* Pods-Spirit-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spirit-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App.release.xcconfig"; sourceTree = "<group>"; };
 		18FE2024207D3492E3DFF593 /* Pods-Spirit-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spirit-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App.debug.xcconfig"; sourceTree = "<group>"; };
+		525469B51FF95A50004A8D11 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5268971F1FE7102600AAF88E /* Spirit-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spirit-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		526897221FE7102600AAF88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526897241FE7102600AAF88E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +50,13 @@
 		526897421FE7473800AAF88E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		526897451FE7526900AAF88E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		526897491FE76E8F00AAF88E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		526DE1E01FF4750D00A2478E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		526DE1E21FF4943100A2478E /* EricTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EricTextField.swift; sourceTree = "<group>"; };
+		52BA00181FF594D200250348 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		52BA001A1FF712CC00250348 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		52BA001C1FF8534C00250348 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		52BA001E1FF8593000250348 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		52BA00201FF85F6900250348 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		6FA0108B2C5666C8E03519E4 /* Pods_Spirit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spirit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +108,7 @@
 		526897341FE7168800AAF88E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52BA001C1FF8534C00250348 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +123,11 @@
 				526897401FE72A6300AAF88E /* YoshikoTextField.swift */,
 				526897451FE7526900AAF88E /* HeaderView.swift */,
 				526897491FE76E8F00AAF88E /* GradientView.swift */,
+				526DE1E21FF4943100A2478E /* EricTextField.swift */,
+				52BA00181FF594D200250348 /* UIExtension.swift */,
+				52BA001E1FF8593000250348 /* FancyView.swift */,
+				52BA00201FF85F6900250348 /* PostCell.swift */,
+				525469B51FF95A50004A8D11 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +137,8 @@
 			children = (
 				526897221FE7102600AAF88E /* AppDelegate.swift */,
 				526897241FE7102600AAF88E /* WelcomeViewController.swift */,
+				526DE1E01FF4750D00A2478E /* RegisterViewController.swift */,
+				52BA001A1FF712CC00250348 /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,14 +305,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				526897411FE72A6300AAF88E /* YoshikoTextField.swift in Sources */,
+				526DE1E11FF4750D00A2478E /* RegisterViewController.swift in Sources */,
 				526897251FE7102600AAF88E /* WelcomeViewController.swift in Sources */,
 				526897231FE7102600AAF88E /* AppDelegate.swift in Sources */,
 				5268973F1FE729C100AAF88E /* TextFieldEffects.swift in Sources */,
+				52BA001D1FF8534C00250348 /* Post.swift in Sources */,
 				526897381FE7226100AAF88E /* CoolButton.swift in Sources */,
 				5268973D1FE7267E00AAF88E /* AkiraTextField.swift in Sources */,
+				52BA00191FF594D200250348 /* UIExtension.swift in Sources */,
 				5268973B1FE722DA00AAF88E /* Constants.swift in Sources */,
+				526DE1E31FF4943100A2478E /* EricTextField.swift in Sources */,
+				52BA001F1FF8593000250348 /* FancyView.swift in Sources */,
 				526897461FE7526900AAF88E /* HeaderView.swift in Sources */,
+				52BA001B1FF712CC00250348 /* FeedViewController.swift in Sources */,
 				5268974A1FE76E8F00AAF88E /* GradientView.swift in Sources */,
+				525469B61FF95A50004A8D11 /* CardView.swift in Sources */,
+				52BA00211FF85F6900250348 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

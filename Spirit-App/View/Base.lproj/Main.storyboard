@@ -25,122 +25,350 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spirited" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-iU-Lkv">
-                                <rect key="frame" x="16" y="114" width="343" height="91"/>
+                                <rect key="frame" x="16" y="55" width="343" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Oih-l3-Bsd"/>
+                                    <constraint firstAttribute="height" constant="91" id="hiK-Hs-WFU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="65"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-eC-KjF">
-                                <rect key="frame" x="16" y="245" width="343" height="102"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="c2X-II-Zw0">
+                                <rect key="frame" x="16" y="196" width="343" height="92"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZq-ON-a2i" customClass="AkiraTextField" customModule="Spirit_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48.5"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHG-5G-Nwp" customClass="EricTextField" customModule="Spirit_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.9929199219" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UPt-PN-ZAw" customClass="AkiraTextField" customModule="Spirit_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="53.5" width="343" height="48.5"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-XQ-Oaz" customClass="EricTextField" customModule="Spirit_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="61" width="343" height="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="inactiveBorderColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.9929199219" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asp-aL-9nQ" customClass="CoolButton" customModule="Spirit_App" customModuleProvider="target">
-                                <rect key="frame" x="16" y="407" width="343" height="60"/>
-                                <color key="backgroundColor" red="0.1518939733505249" green="0.66095483303070068" blue="0.37053197622299194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="exz-uI-zmp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="23"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="M0s-XJ-rj2">
+                                <rect key="frame" x="16" y="318" width="343" height="83"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ia-M0-wFO" customClass="CoolButton" customModule="Spirit_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.27361495349999998" green="0.8118656326" blue="0.3489266701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEM-jV-kgA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA9-ev-vdR">
+                                        <rect key="frame" x="0.0" y="43" width="343" height="40"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="18"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ATC-Q2-dA2" kind="show" id="BzR-8O-JU3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-2d-vvb">
+                                <rect key="frame" x="329" y="617" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
                                 <connections>
-                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nM6-9f-DQw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2r-g0-Qp2">
-                                <rect key="frame" x="16" y="475" width="343" height="40"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ATC-Q2-dA2" kind="show" identifier="goToRegister" id="r1i-TF-KWv"/>
+                                    <segue destination="wfU-he-pmT" kind="show" id="sXl-sm-EET"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dav-eC-KjF" secondAttribute="trailing" constant="16" id="4OT-sQ-8cU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mPa-iU-Lkv" secondAttribute="trailing" constant="16" id="5Eo-0V-Ylc"/>
-                            <constraint firstItem="Dav-eC-KjF" firstAttribute="top" secondItem="mPa-iU-Lkv" secondAttribute="bottom" constant="40" id="85G-Hq-Doi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M2r-g0-Qp2" secondAttribute="trailing" constant="16" id="FGj-IO-PVW"/>
-                            <constraint firstItem="asp-aL-9nQ" firstAttribute="top" secondItem="Dav-eC-KjF" secondAttribute="bottom" constant="60" id="QT5-Xw-qyK"/>
-                            <constraint firstItem="M2r-g0-Qp2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="W6N-1K-Sjq"/>
-                            <constraint firstItem="mPa-iU-Lkv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="cqG-Ep-f2d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M2r-g0-Qp2" secondAttribute="bottom" constant="152" id="eZW-km-otW"/>
-                            <constraint firstItem="Dav-eC-KjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fu7-ep-SLF"/>
-                            <constraint firstItem="mPa-iU-Lkv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l7l-S7-h0A"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="asp-aL-9nQ" secondAttribute="trailing" constant="16" id="lWw-Vw-Axl"/>
-                            <constraint firstItem="asp-aL-9nQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pOd-No-TqW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="asp-aL-9nQ" secondAttribute="bottom" constant="200" id="vye-HE-LzG"/>
+                            <constraint firstItem="c2X-II-Zw0" firstAttribute="top" secondItem="mPa-iU-Lkv" secondAttribute="bottom" constant="50" id="5Hc-TF-zy0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yI8-2d-vvb" secondAttribute="trailing" constant="16" id="BEH-td-mdq"/>
+                            <constraint firstItem="M0s-XJ-rj2" firstAttribute="top" secondItem="c2X-II-Zw0" secondAttribute="bottom" constant="30" id="FcM-92-h1W"/>
+                            <constraint firstItem="M0s-XJ-rj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N2G-hF-bs8"/>
+                            <constraint firstItem="mPa-iU-Lkv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="NpC-Xf-KZc"/>
+                            <constraint firstItem="mPa-iU-Lkv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QDu-Sb-wWj"/>
+                            <constraint firstItem="c2X-II-Zw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WSV-ax-kx5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mPa-iU-Lkv" secondAttribute="trailing" constant="16" id="YFh-qh-Ss7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yI8-2d-vvb" secondAttribute="bottom" constant="20" id="crU-I9-2Iw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2X-II-Zw0" secondAttribute="trailing" constant="16" id="vD7-Gh-DLI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M0s-XJ-rj2" secondAttribute="trailing" constant="16" id="vQL-rQ-L7j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Vrj-9e-z3c"/>
                     <connections>
-                        <outlet property="emailText" destination="EZq-ON-a2i" id="jHG-gt-Efv"/>
-                        <outlet property="passwordText" destination="UPt-PN-ZAw" id="2oP-ow-jqc"/>
+                        <outlet property="emailText" destination="rHG-5G-Nwp" id="zic-fA-GfW"/>
+                        <outlet property="passwordText" destination="9AD-XQ-Oaz" id="jD4-cr-RjM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="38I-Tb-9bY">
             <objects>
-                <viewController id="ATC-Q2-dA2" sceneMemberID="viewController">
+                <viewController id="ATC-Q2-dA2" customClass="RegisterViewController" customModule="Spirit_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PsZ-CK-A89">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.27361495349999998" green="0.8118656326" blue="0.3489266701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zH-kW-yGh" customClass="GradientView" customModule="Spirit_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xd3-ZH-TYa">
+                                        <rect key="frame" x="16" y="156" width="343" height="280"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cA2-RD-TZk" customClass="EricTextField" customModule="Spirit_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" white="0.992919921875" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y3h-64-U4d" customClass="EricTextField" customModule="Spirit_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="343" height="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" white="0.9929199219" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5q-ME-YDz" customClass="EricTextField" customModule="Spirit_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="343" height="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" white="0.9929199219" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMh-DE-IzP" customClass="EricTextField" customModule="Spirit_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="180" width="343" height="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" white="0.9929199219" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neL-R7-dC4" customClass="CoolButton" customModule="Spirit_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="343" height="40"/>
+                                                <color key="backgroundColor" red="0.27361495349999998" green="0.8118656326" blue="0.3489266701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                                <state key="normal" title="Create Account">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="createAccountPressed:" destination="ATC-Q2-dA2" eventType="touchUpInside" id="W2u-1K-Kqs"/>
+                                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZ2-FH-DX1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhv-f0-vDK">
+                                        <rect key="frame" x="16" y="29" width="343" height="77"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="55"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNE-kd-kwO">
+                                        <rect key="frame" x="8" y="50" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="6bD-zo-Eok"/>
+                                            <constraint firstAttribute="height" constant="30" id="u1K-Eq-qlP"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="zD3-lm-u4h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Xd3-ZH-TYa" firstAttribute="top" secondItem="fhv-f0-vDK" secondAttribute="bottom" constant="50" id="EeA-nd-9Fy"/>
+                                    <constraint firstItem="fhv-f0-vDK" firstAttribute="leading" secondItem="3zH-kW-yGh" secondAttribute="leading" constant="16" id="KjI-df-vRd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xd3-ZH-TYa" secondAttribute="trailing" constant="16" id="Vsq-04-4FB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xd3-ZH-TYa" secondAttribute="bottom" constant="231" id="eQd-I9-hO5"/>
+                                    <constraint firstItem="sNE-kd-kwO" firstAttribute="top" secondItem="3zH-kW-yGh" secondAttribute="top" constant="50" id="o49-Ng-tta"/>
+                                    <constraint firstItem="sNE-kd-kwO" firstAttribute="leading" secondItem="3zH-kW-yGh" secondAttribute="leading" constant="8" id="wcr-ZF-TVx"/>
+                                    <constraint firstItem="Xd3-ZH-TYa" firstAttribute="leading" secondItem="3zH-kW-yGh" secondAttribute="leading" constant="16" id="yY6-7h-T7e"/>
+                                    <constraint firstAttribute="trailing" secondItem="fhv-f0-vDK" secondAttribute="trailing" constant="16" id="yaw-w5-QVH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3zH-kW-yGh" firstAttribute="top" secondItem="PsZ-CK-A89" secondAttribute="top" id="7od-Xf-xQu"/>
+                            <constraint firstItem="3zH-kW-yGh" firstAttribute="leading" secondItem="hls-0C-QvC" secondAttribute="leading" id="UXa-eg-yxe"/>
+                            <constraint firstItem="3zH-kW-yGh" firstAttribute="bottom" secondItem="hls-0C-QvC" secondAttribute="bottom" id="qbm-7u-NJu"/>
+                            <constraint firstItem="3zH-kW-yGh" firstAttribute="trailing" secondItem="hls-0C-QvC" secondAttribute="trailing" id="yOt-TL-EXk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hls-0C-QvC"/>
                     </view>
+                    <connections>
+                        <outlet property="emailAddress" destination="r5q-ME-YDz" id="bRK-Mp-g9x"/>
+                        <outlet property="firstName" destination="cA2-RD-TZk" id="1Uh-Pd-IjT"/>
+                        <outlet property="lastName" destination="y3h-64-U4d" id="MbE-eX-QPf"/>
+                        <outlet property="password" destination="cMh-DE-IzP" id="L7p-4I-PNf"/>
+                        <segue destination="wfU-he-pmT" kind="show" identifier="goToFeed" id="d9J-XS-R35"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzf-Wk-f0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="135"/>
+            <point key="canvasLocation" x="885.60000000000002" y="134.48275862068968"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="7AK-lV-4B6">
+            <objects>
+                <viewController id="wfU-he-pmT" customClass="FeedViewController" customModule="Spirit_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yHj-WP-1Q5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIK-zO-sGX" customClass="FancyView" customModule="Spirit_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Spirits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-Ur-cg7">
+                                        <rect key="frame" x="115.5" y="20.5" width="145" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50210815499999994" green="0.83921568629999999" blue="0.76892961920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gpu-Ur-cg7" firstAttribute="centerY" secondItem="HIK-zO-sGX" secondAttribute="centerY" id="G1w-kT-wkE"/>
+                                    <constraint firstAttribute="height" constant="80" id="IPe-ZA-D3z"/>
+                                    <constraint firstItem="gpu-Ur-cg7" firstAttribute="centerX" secondItem="HIK-zO-sGX" secondAttribute="centerX" id="z1X-7F-NEL"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a3t-C3-s0i">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="264" id="Eyk-fp-OCb" customClass="PostCell" customModule="Spirit_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="264"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eyk-fp-OCb" id="KTa-Le-Hui">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pX-dE-qLD" customClass="CardView" customModule="Spirit_App" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="5" width="355" height="254"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-HZ-ZhW">
+                                                            <rect key="frame" x="8" y="8" width="339" height="238"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Lakes Christmas Ale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3f-GM-wO5">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="201.5" height="23"/>
+                                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreatLakes" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-u1-LfQ">
+                                                                    <rect key="frame" x="0.0" y="38" width="339" height="150"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="150" id="7rR-rW-toj"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8NA-3o-7GR">
+                                                                    <rect key="frame" x="0.0" y="203" width="75" height="35"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="TeA-GJ-o0i">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="35" id="buC-W0-mHW"/>
+                                                                                <constraint firstAttribute="height" constant="35" id="urb-f8-DT3"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dislike" translatesAutoresizingMaskIntoConstraints="NO" id="p56-Ax-fDd">
+                                                                            <rect key="frame" x="40" y="0.0" width="35" height="35"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="35" id="GNV-oh-j89"/>
+                                                                                <constraint firstAttribute="width" constant="35" id="ICG-5M-M0m"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.82579184516432325" green="0.82579184516432325" blue="0.82579184516432325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="ccC-HZ-ZhW" secondAttribute="bottom" constant="8" id="K89-WG-ldb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ccC-HZ-ZhW" secondAttribute="trailing" constant="8" id="W6d-TD-rrq"/>
+                                                        <constraint firstItem="ccC-HZ-ZhW" firstAttribute="leading" secondItem="6pX-dE-qLD" secondAttribute="leading" constant="8" id="eHg-t2-bWj"/>
+                                                        <constraint firstItem="ccC-HZ-ZhW" firstAttribute="top" secondItem="6pX-dE-qLD" secondAttribute="top" constant="8" id="trA-yM-Gtp"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6pX-dE-qLD" secondAttribute="bottom" constant="5" id="4fV-bd-kt4"/>
+                                                <constraint firstAttribute="trailing" secondItem="6pX-dE-qLD" secondAttribute="trailing" constant="10" id="Di2-7Z-rl0"/>
+                                                <constraint firstItem="6pX-dE-qLD" firstAttribute="leading" secondItem="KTa-Le-Hui" secondAttribute="leading" constant="10" id="lDD-Zs-mzp"/>
+                                                <constraint firstItem="6pX-dE-qLD" firstAttribute="top" secondItem="KTa-Le-Hui" secondAttribute="top" constant="5" id="n6L-si-Zy1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a3t-C3-s0i" firstAttribute="trailing" secondItem="s83-wu-uNv" secondAttribute="trailing" id="2JZ-wx-ZPg"/>
+                            <constraint firstItem="HIK-zO-sGX" firstAttribute="top" secondItem="yHj-WP-1Q5" secondAttribute="top" id="Dqe-me-dfB"/>
+                            <constraint firstItem="a3t-C3-s0i" firstAttribute="top" secondItem="HIK-zO-sGX" secondAttribute="bottom" id="GKk-hy-ASx"/>
+                            <constraint firstItem="HIK-zO-sGX" firstAttribute="trailing" secondItem="s83-wu-uNv" secondAttribute="trailing" id="TFj-73-Z0K"/>
+                            <constraint firstItem="a3t-C3-s0i" firstAttribute="bottom" secondItem="s83-wu-uNv" secondAttribute="bottom" id="k8q-J2-8gm"/>
+                            <constraint firstItem="HIK-zO-sGX" firstAttribute="leading" secondItem="s83-wu-uNv" secondAttribute="leading" id="qmI-t8-JH5"/>
+                            <constraint firstItem="a3t-C3-s0i" firstAttribute="leading" secondItem="s83-wu-uNv" secondAttribute="leading" id="yho-VY-4Sd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s83-wu-uNv"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="a3t-C3-s0i" id="dhK-Ub-G5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vw0-9L-2eH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Back" width="128" height="128"/>
+        <image name="GreatLakes" width="600" height="338"/>
+        <image name="dislike" width="512" height="512"/>
+        <image name="like" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sXl-sm-EET"/>
+    </inferredMetricsTieBreakers>
 </document>

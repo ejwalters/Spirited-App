@@ -11,7 +11,7 @@ import UIKit
 
 class GradientView: UIView {
     
-    override open class var layerClass: AnyClass {
+    override open class var layerClass: AnyClass {1
         return CAGradientLayer.classForCoder()
     }
     
