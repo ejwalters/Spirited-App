@@ -10,6 +10,9 @@ target 'Spirit-App' do
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'SwiftKeychainWrapper'
+pod 'Firebase/Storage'
+pod 'Firebase/Core'
 
 
 end

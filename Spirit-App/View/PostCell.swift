@@ -13,14 +13,30 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var likeImg: UIImageView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        let tap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
+        tap.numberOfTapsRequired = 1
+        likeImg.addGestureRecognizer(tap)
+        likeImg.isUserInteractionEnabled = true
     }
     
 
+    
+    @objc func likeTapped(sender: UITapGestureRecognizer) {
+        
+        if self.likeImg.image == UIImage(named: "like") {
+            self.likeImg.image = UIImage(named: "dislike")
+        } else {
+            self.likeImg.image = UIImage(named: "like")
+        }
+        
+        
+    }
     
     
 }

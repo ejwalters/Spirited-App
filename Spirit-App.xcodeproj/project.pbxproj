@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E7ED1605ED65F68ABE4CA54 /* Pods_Spirit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA0108B2C5666C8E03519E4 /* Pods_Spirit_App.framework */; };
 		525469B61FF95A50004A8D11 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469B51FF95A50004A8D11 /* CardView.swift */; };
+		525469B91FF9C7AA004A8D11 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469B81FF9C7AA004A8D11 /* DataService.swift */; };
 		526897231FE7102600AAF88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897221FE7102600AAF88E /* AppDelegate.swift */; };
 		526897251FE7102600AAF88E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897241FE7102600AAF88E /* WelcomeViewController.swift */; };
 		526897281FE7102600AAF88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526897261FE7102600AAF88E /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		0D9972245524CEF5E69C9F9E /* Pods-Spirit-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spirit-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App.release.xcconfig"; sourceTree = "<group>"; };
 		18FE2024207D3492E3DFF593 /* Pods-Spirit-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spirit-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App.debug.xcconfig"; sourceTree = "<group>"; };
 		525469B51FF95A50004A8D11 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		525469B81FF9C7AA004A8D11 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5268971F1FE7102600AAF88E /* Spirit-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spirit-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		526897221FE7102600AAF88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526897241FE7102600AAF88E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525469B71FF9C77B004A8D11 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				525469B81FF9C7AA004A8D11 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		526897161FE7102600AAF88E = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		526897211FE7102600AAF88E /* Spirit-App */ = {
 			isa = PBXGroup;
 			children = (
+				525469B71FF9C77B004A8D11 /* Services */,
 				526897391FE722CB00AAF88E /* Utilities */,
 				526897361FE7169800AAF88E /* Controller */,
 				526897351FE7169200AAF88E /* View */,
@@ -267,6 +278,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Spirit-App/Pods-Spirit-App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -274,6 +286,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -313,6 +326,7 @@
 				526897381FE7226100AAF88E /* CoolButton.swift in Sources */,
 				5268973D1FE7267E00AAF88E /* AkiraTextField.swift in Sources */,
 				52BA00191FF594D200250348 /* UIExtension.swift in Sources */,
+				525469B91FF9C7AA004A8D11 /* DataService.swift in Sources */,
 				5268973B1FE722DA00AAF88E /* Constants.swift in Sources */,
 				526DE1E31FF4943100A2478E /* EricTextField.swift in Sources */,
 				52BA001F1FF8593000250348 /* FancyView.swift in Sources */,

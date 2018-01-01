@@ -17,8 +17,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var password: EricTextField!
     
     override func viewDidLoad() {
-        
-        
         self.hideKeyboardWhenTappedAround() 
     }
     

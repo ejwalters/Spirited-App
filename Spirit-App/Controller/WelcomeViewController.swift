@@ -6,6 +6,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class WelcomeViewController: UIViewController {
 
@@ -23,16 +24,21 @@ class WelcomeViewController: UIViewController {
         gradient.colors = [UIColor.white.cgColor, UIColor.black.cgColor]
         
         view.layer.insertSublayer(gradient, at: 0)
-//        welcomeImage.backgroundColor = .clear
-//        let blurEffect = UIBlurEffect(style: .light)
-//        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-//        //always fill the view
-//        blurEffectView.frame = welcomeImage.bounds
-//        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        
-//        welcomeImage.addSubview(blurEffectView)
         
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "goToFeed", sender: nil)
+        } else {
+            //User Not logged in
+        }
+        
         
     }
 
@@ -42,21 +48,16 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func loginPressed(_ sender: CoolButton) {
-        
-        //TODO: Set up a new user on our Firbase database
-//        Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
-//            if error != nil {
-//                print(error!)
-//            } else {
-//                //success
-//                print("Registration Successful!")
-//
-//            }
-//        }
+        Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            }  else {
+                print("Log in successful!")
+                self.performSegue(withIdentifier: "goToFeed", sender: nil)
+            }
+            
+        }
         
     }
-    
-
-    
 }
 

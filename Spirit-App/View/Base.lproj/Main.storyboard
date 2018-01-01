@@ -66,7 +66,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ia-M0-wFO" customClass="CoolButton" customModule="Spirit_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
-                                        <color key="backgroundColor" red="0.27361495349999998" green="0.8118656326" blue="0.3489266701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.50210815499999994" green="0.83921568629999999" blue="0.76892961920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,7 +91,7 @@
                                 <rect key="frame" x="329" y="617" width="30" height="30"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
-                                    <segue destination="wfU-he-pmT" kind="show" id="sXl-sm-EET"/>
+                                    <segue destination="wfU-he-pmT" kind="show" identifier="goToFeed" id="sXl-sm-EET"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,7 +181,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neL-R7-dC4" customClass="CoolButton" customModule="Spirit_App" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="240" width="343" height="40"/>
-                                                <color key="backgroundColor" red="0.27361495349999998" green="0.8118656326" blue="0.3489266701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.50210815499999994" green="0.83921568629999999" blue="0.76892961920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
                                                 <state key="normal" title="Create Account">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzf-Wk-f0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885.60000000000002" y="134.48275862068968"/>
+            <point key="canvasLocation" x="946" y="-691"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="7AK-lV-4B6">
@@ -257,86 +257,115 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Spirits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-Ur-cg7">
-                                        <rect key="frame" x="115.5" y="20.5" width="145" height="39.5"/>
+                                        <rect key="frame" x="115" y="30" width="145" height="39.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="123-em-I51">
+                                        <rect key="frame" x="337" y="42" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6c9-JP-aEH"/>
+                                            <constraint firstAttribute="width" constant="30" id="Dh7-S1-7C9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="40"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAt-WO-5yW">
+                                        <rect key="frame" x="8" y="36" width="66" height="36"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                        <state key="normal" title="Sign Out">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signOutTapped:" destination="wfU-he-pmT" eventType="touchUpInside" id="kPs-DH-J76"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.50210815499999994" green="0.83921568629999999" blue="0.76892961920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="gpu-Ur-cg7" firstAttribute="centerY" secondItem="HIK-zO-sGX" secondAttribute="centerY" id="G1w-kT-wkE"/>
                                     <constraint firstAttribute="height" constant="80" id="IPe-ZA-D3z"/>
-                                    <constraint firstItem="gpu-Ur-cg7" firstAttribute="centerX" secondItem="HIK-zO-sGX" secondAttribute="centerX" id="z1X-7F-NEL"/>
+                                    <constraint firstItem="EAt-WO-5yW" firstAttribute="leading" secondItem="HIK-zO-sGX" secondAttribute="leading" constant="8" id="OZh-OK-hHI"/>
+                                    <constraint firstAttribute="bottom" secondItem="123-em-I51" secondAttribute="bottom" constant="8" id="btb-ud-5UV"/>
+                                    <constraint firstItem="gpu-Ur-cg7" firstAttribute="top" secondItem="HIK-zO-sGX" secondAttribute="top" constant="30" id="fTp-oB-YAI"/>
+                                    <constraint firstItem="gpu-Ur-cg7" firstAttribute="centerX" secondItem="HIK-zO-sGX" secondAttribute="centerX" id="ixw-nU-ra0"/>
+                                    <constraint firstAttribute="trailing" secondItem="123-em-I51" secondAttribute="trailing" constant="8" id="meo-lL-iCL"/>
+                                    <constraint firstAttribute="bottom" secondItem="EAt-WO-5yW" secondAttribute="bottom" constant="8" id="yL3-Pf-kMc"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a3t-C3-s0i">
                                 <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="264" id="Eyk-fp-OCb" customClass="PostCell" customModule="Spirit_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="264"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="155" id="Eyk-fp-OCb" customClass="PostCell" customModule="Spirit_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eyk-fp-OCb" id="KTa-Le-Hui">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pX-dE-qLD" customClass="CardView" customModule="Spirit_App" customModuleProvider="target">
-                                                    <rect key="frame" x="10" y="5" width="355" height="254"/>
+                                                    <rect key="frame" x="20" y="11" width="335" height="130"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-HZ-ZhW">
-                                                            <rect key="frame" x="8" y="8" width="339" height="238"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreatLakes" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-u1-LfQ">
+                                                            <rect key="frame" x="228" y="0.0" width="107" height="130"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="130" id="7rR-rW-toj"/>
+                                                                <constraint firstAttribute="width" constant="107" id="s6g-Kz-GHg"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="on0-BU-hAh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="56" height="130"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Lakes Christmas Ale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3f-GM-wO5">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="201.5" height="23"/>
-                                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreatLakes" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-u1-LfQ">
-                                                                    <rect key="frame" x="0.0" y="38" width="339" height="150"/>
+                                                                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="fVi-Fs-a6Y">
+                                                                    <rect key="frame" x="19" y="47" width="18" height="36"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="150" id="7rR-rW-toj"/>
+                                                                        <constraint firstAttribute="width" constant="18" id="bpg-lv-gMi"/>
+                                                                        <constraint firstAttribute="height" constant="36" id="oqI-MY-jQP"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8NA-3o-7GR">
-                                                                    <rect key="frame" x="0.0" y="203" width="75" height="35"/>
-                                                                    <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="TeA-GJ-o0i">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="35" id="buC-W0-mHW"/>
-                                                                                <constraint firstAttribute="height" constant="35" id="urb-f8-DT3"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dislike" translatesAutoresizingMaskIntoConstraints="NO" id="p56-Ax-fDd">
-                                                                            <rect key="frame" x="40" y="0.0" width="35" height="35"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="35" id="GNV-oh-j89"/>
-                                                                                <constraint firstAttribute="width" constant="35" id="ICG-5M-M0m"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                    </subviews>
-                                                                </stackView>
                                                             </subviews>
-                                                        </stackView>
+                                                            <color key="backgroundColor" red="0.50210815499999994" green="0.83921568629999999" blue="0.76892961920000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="fVi-Fs-a6Y" firstAttribute="centerX" secondItem="on0-BU-hAh" secondAttribute="centerX" id="F4h-vF-cjd"/>
+                                                                <constraint firstAttribute="width" constant="56" id="Lrb-AC-lgc"/>
+                                                                <constraint firstItem="fVi-Fs-a6Y" firstAttribute="centerY" secondItem="on0-BU-hAh" secondAttribute="centerY" id="eti-Oo-c9S"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great Lakes Christmas Ale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yk5-6d-6Ua">
+                                                            <rect key="frame" x="64" y="55" width="156" height="21"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="11"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.82579184516432325" green="0.82579184516432325" blue="0.82579184516432325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="ccC-HZ-ZhW" secondAttribute="bottom" constant="8" id="K89-WG-ldb"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ccC-HZ-ZhW" secondAttribute="trailing" constant="8" id="W6d-TD-rrq"/>
-                                                        <constraint firstItem="ccC-HZ-ZhW" firstAttribute="leading" secondItem="6pX-dE-qLD" secondAttribute="leading" constant="8" id="eHg-t2-bWj"/>
-                                                        <constraint firstItem="ccC-HZ-ZhW" firstAttribute="top" secondItem="6pX-dE-qLD" secondAttribute="top" constant="8" id="trA-yM-Gtp"/>
+                                                        <constraint firstAttribute="bottom" secondItem="on0-BU-hAh" secondAttribute="bottom" id="6kd-yS-vZp"/>
+                                                        <constraint firstItem="on0-BU-hAh" firstAttribute="top" secondItem="6pX-dE-qLD" secondAttribute="top" id="IIp-bV-e3s"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GR9-u1-LfQ" secondAttribute="bottom" id="NBA-1E-2Zi"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GR9-u1-LfQ" secondAttribute="trailing" id="Pk7-B6-pgH"/>
+                                                        <constraint firstItem="Yk5-6d-6Ua" firstAttribute="leading" secondItem="on0-BU-hAh" secondAttribute="trailing" constant="8" id="RWB-2R-Lwv"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Yk5-6d-6Ua" secondAttribute="bottom" constant="54" id="W2X-xF-66B"/>
+                                                        <constraint firstItem="on0-BU-hAh" firstAttribute="leading" secondItem="6pX-dE-qLD" secondAttribute="leading" id="doR-r4-HGV"/>
+                                                        <constraint firstItem="Yk5-6d-6Ua" firstAttribute="top" secondItem="6pX-dE-qLD" secondAttribute="top" constant="55" id="foJ-1n-qAT"/>
+                                                        <constraint firstItem="GR9-u1-LfQ" firstAttribute="leading" secondItem="Yk5-6d-6Ua" secondAttribute="trailing" constant="8" id="sVW-Si-wng"/>
+                                                        <constraint firstItem="GR9-u1-LfQ" firstAttribute="top" secondItem="6pX-dE-qLD" secondAttribute="top" id="vXx-GH-jsa"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="6pX-dE-qLD" secondAttribute="bottom" constant="5" id="4fV-bd-kt4"/>
-                                                <constraint firstAttribute="trailing" secondItem="6pX-dE-qLD" secondAttribute="trailing" constant="10" id="Di2-7Z-rl0"/>
-                                                <constraint firstItem="6pX-dE-qLD" firstAttribute="leading" secondItem="KTa-Le-Hui" secondAttribute="leading" constant="10" id="lDD-Zs-mzp"/>
-                                                <constraint firstItem="6pX-dE-qLD" firstAttribute="top" secondItem="KTa-Le-Hui" secondAttribute="top" constant="5" id="n6L-si-Zy1"/>
+                                                <constraint firstAttribute="bottom" secondItem="6pX-dE-qLD" secondAttribute="bottom" constant="14" id="4fV-bd-kt4"/>
+                                                <constraint firstAttribute="trailing" secondItem="6pX-dE-qLD" secondAttribute="trailing" constant="20" id="Di2-7Z-rl0"/>
+                                                <constraint firstItem="6pX-dE-qLD" firstAttribute="leading" secondItem="KTa-Le-Hui" secondAttribute="leading" constant="20" id="lDD-Zs-mzp"/>
+                                                <constraint firstItem="6pX-dE-qLD" firstAttribute="top" secondItem="KTa-Le-Hui" secondAttribute="top" constant="11" id="n6L-si-Zy1"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likeImg" destination="fVi-Fs-a6Y" id="us5-G9-79F"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -355,6 +384,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="a3t-C3-s0i" id="dhK-Ub-G5B"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="mCL-S5-nRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vw0-9L-2eH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -365,10 +395,10 @@
     <resources>
         <image name="Back" width="128" height="128"/>
         <image name="GreatLakes" width="600" height="338"/>
-        <image name="dislike" width="512" height="512"/>
         <image name="like" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sXl-sm-EET"/>
+        <segue reference="mCL-S5-nRm"/>
     </inferredMetricsTieBreakers>
 </document>
