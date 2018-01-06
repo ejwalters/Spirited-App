@@ -11,6 +11,7 @@
 		525469B61FF95A50004A8D11 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469B51FF95A50004A8D11 /* CardView.swift */; };
 		525469B91FF9C7AA004A8D11 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469B81FF9C7AA004A8D11 /* DataService.swift */; };
 		525469BB1FF9DE3B004A8D11 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469BA1FF9DE3B004A8D11 /* PopUpVC.swift */; };
+		525469BD1FFC66B1004A8D11 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525469BC1FFC66B1004A8D11 /* FancyField.swift */; };
 		526897231FE7102600AAF88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897221FE7102600AAF88E /* AppDelegate.swift */; };
 		526897251FE7102600AAF88E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526897241FE7102600AAF88E /* WelcomeViewController.swift */; };
 		526897281FE7102600AAF88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526897261FE7102600AAF88E /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		525469B51FF95A50004A8D11 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		525469B81FF9C7AA004A8D11 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		525469BA1FF9DE3B004A8D11 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
+		525469BC1FFC66B1004A8D11 /* FancyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		5268971F1FE7102600AAF88E /* Spirit-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spirit-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		526897221FE7102600AAF88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526897241FE7102600AAF88E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				52BA001E1FF8593000250348 /* FancyView.swift */,
 				52BA00201FF85F6900250348 /* PostCell.swift */,
 				525469B51FF95A50004A8D11 /* CardView.swift */,
+				525469BC1FFC66B1004A8D11 /* FancyField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				52BA00191FF594D200250348 /* UIExtension.swift in Sources */,
 				525469B91FF9C7AA004A8D11 /* DataService.swift in Sources */,
 				5268973B1FE722DA00AAF88E /* Constants.swift in Sources */,
+				525469BD1FFC66B1004A8D11 /* FancyField.swift in Sources */,
 				526DE1E31FF4943100A2478E /* EricTextField.swift in Sources */,
 				52BA001F1FF8593000250348 /* FancyView.swift in Sources */,
 				526897461FE7526900AAF88E /* HeaderView.swift in Sources */,

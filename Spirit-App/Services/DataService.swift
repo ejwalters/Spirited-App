@@ -54,6 +54,14 @@ class DataService {
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
+    func updateFirebaseInfo(uid: String, firstname: Dictionary<String, String>, lastname: Dictionary<String, String>, email: Dictionary <String, String>) {
+        
+        REF_USERS.child(uid).updateChildValues(firstname)
+        REF_USERS.child(uid).updateChildValues(lastname)
+        REF_USERS.child(uid).updateChildValues(email)
+        
+    }
+    
     
     
     

@@ -31,17 +31,24 @@ class RegisterViewController: UIViewController {
     @IBAction func createAccountPressed(_ sender: CoolButton) {
             
             //TODO: Set up a new user on our Firbase database
-            Auth.auth().createUser(withEmail: emailAddress.text!, password: password.text!) { (user, error) in
-                if error != nil {
-                    print(error!)
-                } else {
-                    //success
-                    print("Registration Successful!")
-                    self.performSegue(withIdentifier: "goToFeed", sender: nil)
-                    
+        Auth.auth().createUser(withEmail: emailAddress.text!, password: password.text!, completion: { (user, error) in
+            if error != nil {
+                print("ERIC: Unable to authenticate with Firebase using email")
+            } else {
+                print("ERIC: Successfully authenticated with Firebase")
+                if let user = user {
+                    let userData = ["provider": user.providerID]
+                    let firstname = ["firstname": self.firstName.text!]
+                    let lastname = ["lastname": self.lastName.text!]
+                    let email = ["email": self.emailAddress.text!]
+                    self.completeSignIn(id: user.uid, userData: userData)
+                    //When account is first created, add the name and email to the database
+                    DataService.ds.updateFirebaseInfo(uid: user.uid, firstname: firstname, lastname: lastname, email: email)
                 }
+                
             }
+        })
             
-        }
+    }
     
 }

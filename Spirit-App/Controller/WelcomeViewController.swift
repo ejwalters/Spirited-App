@@ -48,16 +48,29 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func loginPressed(_ sender: CoolButton) {
-        Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
-            if error != nil {
-                print(error!)
-            }  else {
-                print("Log in successful!")
-                self.performSegue(withIdentifier: "goToFeed", sender: nil)
-            }
-            
+        if let email = emailText.text, let password = passwordText.text {
+            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    print("ERIC: Email User Authenticated with Firebase")
+                    if let user = user {
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                    }
+                } else {
+                    let alertController = UIAlertController(title: "Sign In Error", message:
+                        "The email and password entered do not match our records. Please re-try or Register if you do not have an account.", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            })
         }
-        
     }
+    
+
+    
+
 }
+
+
 
